@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERATION</title>
+    <script src="divide.js"></script>
+</head>
+<body>
+
+    <p>The sum is: <span id="sum"></span></p>
+    <p>The difference is: <span id="diff"></span></p>
+    <p>The Product is: <span id="prod"></span></p>
+    <p>The Quotient is: <span id="quo"></span></p>
+
+    <script>
+        // variable initializations
+        var num1 = 2;
+        var num2 = 1;
+        var ans;
+
+        ans = num1 + num2;
+        document.getElementById("sum").innerHTML = ans;
+        document.getElementById("diff").innerHTML = subtract();
+        document.getElementById("prod").innerHTML = multiply(5,2);
+        document.getElementById("quo").innerHTML = divide(5,5);
+
+
+        function subtract(){
+            var num1 = 3;
+            var num2 = 2;
+
+            ans= num1 - num2;
+            return ans;
+        }
+
+        function multiply(x,y){
+            var ans = x*y;
+             return ans;
+        }
+            
+    </script>
+    
+</body>
+</html>
